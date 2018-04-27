@@ -16,9 +16,7 @@ import ProfileTab from "./AppTabNavigator/ProfileTab";
 
 class MainScreen extends Component {
     static navigationOptions = {
-        title: 'Instagram',
-        headerLeft: <Icon size={33} name="ios-camera-outline" style={{paddingLeft: 10,}} />,
-        headerRight: <Icon size={33}  name="ios-send-outline" style={{paddingRight: 10}} />,
+        header: null
         
       }
     render(){

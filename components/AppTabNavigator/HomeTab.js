@@ -6,16 +6,20 @@ import {
   ScrollView,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { Container, Content, Thumbnail } from 'native-base';
+import { Container, Content, Thumbnail, Header, Left, Right, Body } from 'native-base';
 
 import CardComponent from '../cardComponent';
-
 
 class HomeTab extends Component {
    
     render(){
         return (
             <Container style={styles.container}>
+                <Header  style={{ backgroundColor: 'white' }}>
+                   <Left style={{ flex: 1,}}><Icon size={33} name="ios-camera-outline" style={{}} /></Left>
+                   <Body style={{ flex: 1, alignItems: 'center' }}><Text style={{ fontWeight: 'bold', color:'black', fontSize: 18 }}>Instagram</Text></Body>
+                   <Right style={{ flex: 1,}}><Icon size={33}  name="ios-send-outline" style={{}} /></Right>
+                </Header>
                 <Content>
                     <View style={{height: 100}}>
                       <View style={{flex:1, 
